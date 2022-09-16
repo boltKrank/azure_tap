@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-16T00:27:11.799Z" agent="5.0 (Windows)" etag="3HS_tPja4pyx5hdHVOpt" version="20.3.0" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2022-09-16T04:00:31.431Z" agent="5.0 (Windows)" etag="5DkcyF_oLF8O5XMME5Fb" version="20.3.0" type="github" pages="8">
   <diagram name="Entry point" id="8ce9d11a-91a2-4d17-14d8-a56ed91bf033">
     <mxGraphModel dx="1673" dy="885" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" background="none" math="0" shadow="0">
       <root>
@@ -220,6 +220,9 @@
         <mxCell id="18CcLGCfpTQbdbMOOTQu-14" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 4px; line-height: 19px;&quot;&gt;&lt;div style=&quot;font-size: 4px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;font-size: 4px;&quot;&gt;management_routes_workload_worker&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=4;" vertex="1" parent="1">
           <mxGeometry x="680" y="900" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="GrSw57Y_yumzwMTHvwcR-1" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;labelBackgroundColor=#FFFFFF;fontSize=4;" vertex="1" parent="1">
+          <mxGeometry x="920" y="730" width="140" height="160" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -267,6 +270,14 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ZmRPqkdmSW83Qfhm-jqz" name="management_routes_workload_worker">
+    <mxGraphModel dx="1422" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="NnIbAKvoQ8dPKDMeVBmU" name="Page-8">
     <mxGraphModel dx="1422" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
       <root>
         <mxCell id="0" />
