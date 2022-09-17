@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-17T12:07:44.902Z" agent="5.0 (Windows)" etag="1wxb2jvcJ-iCEy9To1aT" version="20.3.1" type="github" pages="10">
+<mxfile host="app.diagrams.net" modified="2022-09-17T12:17:46.636Z" agent="5.0 (Windows)" etag="NJuNY70wxMwxn5noD0I_" version="20.3.1" type="github" pages="11">
   <diagram name="Entry point" id="8ce9d11a-91a2-4d17-14d8-a56ed91bf033">
     <mxGraphModel dx="1778" dy="940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" background="none" math="0" shadow="0">
       <root>
@@ -120,7 +120,39 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="KpaHSgXzEpZFQoiQR3Ww-1" value="LOCAL_SCRIPT_FILENAME" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="1095" y="600" width="250" height="80" as="geometry" />
+          <mxGeometry x="1095" y="750" width="250" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="fNjUtaCC0ST2lUFgX4Gi" name="Output">
+    <mxGraphModel dx="1422" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yfgqMs4Vwz748q807Wf_-1" value="scripts/&amp;lt;hostname&amp;gt;.sh" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="20" y="30" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="yfgqMs4Vwz748q807Wf_-2" value="cd $(mktemp --directory)&lt;br&gt;must_restart_services=false" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="280" y="40" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yfgqMs4Vwz748q807Wf_-3" value="/etc/systemd/system/custom-routes.service" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="20" y="200" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="yfgqMs4Vwz748q807Wf_-4" value="[Unit]&lt;br&gt;Description=Apply custom routes&lt;br&gt;After=network-online.target&lt;br&gt;Requires=network-online.target&lt;br&gt;&lt;br&gt;[Service]&lt;br&gt;Type=oneshot" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="280" y="230" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yfgqMs4Vwz748q807Wf_-5" value="remote_script_fh" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="470" y="310" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yfgqMs4Vwz748q807Wf_-6" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="yfgqMs4Vwz748q807Wf_-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="340" as="sourcePoint" />
+            <mxPoint x="310" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yfgqMs4Vwz748q807Wf_-7" value="[Install]&lt;br&gt;RequiredBy=multi-user.target&lt;br&gt;EOF&lt;br&gt;&lt;br&gt;chmod 644 /etc/systemd/system/custom-routes.service&lt;br&gt;systemctl daemon-reload&lt;br&gt;systemctl enable custom-routes" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="280" y="390" width="320" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -405,7 +437,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="QdzZhKMBvqwf1JSXKIiw" name="Page-9">
+  <diagram id="QdzZhKMBvqwf1JSXKIiw" name="scripts_hostname.sh">
     <mxGraphModel dx="1422" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
       <root>
         <mxCell id="0" />
